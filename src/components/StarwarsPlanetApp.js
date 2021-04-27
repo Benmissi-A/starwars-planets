@@ -42,7 +42,7 @@ const StarWarsPlanetApp = () => {
   }
   
   return   <section className="container py-5">
-            <h1 className="mb-5">Planètes dans l'univer Star Wars</h1>
+            <h1 className="mb-5"><strong>Planètes dans l'univer Star Wars</strong></h1>
             <div className="row">
               { planets.map(el => <Planet key={el.name} planet={el}/> )}
             </div>
