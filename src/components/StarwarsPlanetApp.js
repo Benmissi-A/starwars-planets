@@ -38,6 +38,7 @@ const StarWarsPlanetApp = () => {
   const handleClick = (e) => {
     e.preventDefault()
     setCount(count+1)
+    console.log(apiCall)
   }
   
   return   <section className="container py-5">
@@ -47,7 +48,7 @@ const StarWarsPlanetApp = () => {
             </div>
             {loading && <p>Loading....</p>}
             {error && <p>{error}</p>} 
-          {planets.length === planetsCount ? <p class="bg-dark text-white p-3">Nous avons listé toutes les planètes recensées.</p> : <button type="button" className="btn btn-dark" onClick={handleClick}>Suivantes</button>}
+          {planets.length === planetsCount ? <p className="bg-dark text-white p-3">Nous avons listé toutes les planètes recensées.</p> : <button type="button" className="btn btn-dark" onClick={handleClick}>Suivantes</button>}
           </section>
 }
 export default StarWarsPlanetApp
